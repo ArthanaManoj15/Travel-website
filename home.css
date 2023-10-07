@@ -1,0 +1,279 @@
+/* Nav Section */
+.nav-link:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.nav-but .btn:hover {
+    color: orange;
+}
+
+.nav-link i:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+body {
+    height: 200vh;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'ADLaM Display', cursive;
+    font-size: 22px;
+}
+
+/* Nav section ended */
+
+/* Slider */
+.home-section {
+    width: 100%;
+    /* height: 80%; */
+}
+
+.home-content {
+    width: 100%;
+    height: 80vh;
+    background-position: right;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -55;
+}
+
+.img1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://wallpaperaccess.com/full/1192101.jpg);
+}
+
+.img2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://wallpaperaccess.com/full/776947.jpg);
+}
+
+.btn-home {
+    display: inline-block;
+    background-color: orange;
+    transition: 0.2s ease-in;
+}
+
+.btn-home:hover {
+    background-color: #FF8C00;
+}
+
+.content-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.heading3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.heading2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+/* Slider ended */
+
+/* Flight section */
+.nav-link-pass {
+    text-decoration: none;
+    color: black;
+}
+
+.subhead-flight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Globe Section */
+
+.globe img:hover {
+    opacity: 0.5;
+}
+
+/* Popular destination */
+.home-content1 {
+    width: 100%;
+    height: 180px;
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -55;
+}
+
+.content-home1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.image1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1568321612313-209650d5d99a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80);
+    
+    min-width: 100%;
+    background-repeat: no-repeat;
+
+}
+
+/* .image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i0.wp.com/www.hachettebookgroup.com/wp-content/uploads/2019/01/Thailand_TonSaiBay_chriss73_123rf.jpg?resize=1080%2C1080&ssl=1);
+} */
+.image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://worldtravelpackages.com/wp-content/uploads/2023/04/Thailand-On-Budget.png);
+}
+
+.image3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/76/b3/19/caption.jpg?w=1100&h=-1&s=1);
+
+}
+
+.image4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://assets.vogue.in/photos/5ce43d58f55c27a7f4a28dce/1:1/w_1080,h_1080,c_limit/London-City-Travel-Guide-Vogue-India.jpg);
+
+}
+
+.image5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://mythailandtours.com/wp-content/uploads/2021/04/Vacation-ideas-to-discover-the-top-Amsterdam-attractions.jpg);
+
+}
+
+.image6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://assets-global.website-files.com/5dc034b34ca21b09a5216c51/63b6d0c523062668d772d8d8_X5QWtj31QFomM9nCXaGqShGVDVsrX-BRPenAHy0lyhY.jpeg);
+}
+
+.offer {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+.heading4{
+    font-size: 22px;
+}
+
+/* Service section */
+#carouselExampleControls2 a{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+/* Service section ended*/
+
+/* forex section */
+.forex-title {
+    font-size: 30px;
+}
+
+.btn-forex {
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+marquee {
+    font-weight: bold;
+}
+/* forex section ended */
+
+/* Testimonials */
+.testimonials img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 5px 1px grey;
+}
+/* testimonials ended */
+
+/* Footer section */
+/* footer */
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    float: left;
+
+}
+
+.icon i {
+    font-size: 30px;
+    color:black;
+}
+
+#site-footer {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copywrite {
+    text-align: center;
+}
+.footer-title{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+.privacy-contact {
+    justify-content: center;
+    /* display: flex; */
+    align-items: center;
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: bold;
+
+}
+/* .color-footer{
+    
+    background-color: black;
+} */
+
+.icon i:hover {
+    color: orange;
+
+    /* background-image: linear-gradient(to right, red , yellow); */
+    animation: shake 0.75s;
+    /* transform: rotateY(150deg); */
+
+}
+
+
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}

@@ -1,0 +1,78 @@
+#img1{
+    height: 250px;
+    
+}
+#qrcode{
+    width: 100px;
+    height: 100px;
+    
+}
+.nav-link:hover{
+    color: orange;
+    
+    text-decoration: underline;
+}
+.nav-but .btn:hover{
+    color: orange;
+}
+body{
+    height: 200vh;
+}
+.navbar{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-brand{
+    font-family: 'ADLaM Display', cursive;
+    font-size: 22px;
+    
+}
+/* footer */
+.icon{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0px 10px;
+    float: left;
+  
+  }
+  .icon i{
+    font-size: 30px;
+    color: black;
+  }
+  #site-footer{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #copywrite{
+    text-align: center;
+  }
+  .icon i:hover{
+    color:orange;
+    
+    /* background-image: linear-gradient(to right, red , yellow); */
+    animation:shake  0.75s ;
+    /* transform: rotateY(150deg); */
+    
+  }
+            
+  
+
+  @keyframes shake{
+    10% {
+        transform: rotate(15deg);
+    }
+    20% {
+        transform: rotate(-15deg);
+    }
+    30% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+} 
