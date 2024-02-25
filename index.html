@@ -23,7 +23,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="home.css">
 
-    <title>Document</title>
+    <title>ExploreEuphoria</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <!-- <div class="container-fluid"> -->
-            <a class="navbar-brand" href="#"><img src="images/images.png" alt="logo"
+            <a class="navbar-brand" href="index.html"><img src="images/images.png" alt="logo"
                     style="height: 40px;width: 50px;"><span style="color: orange;">E</span>xplore<span
                     style="color: orange;">E</span>uphoria</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -47,19 +47,19 @@
                             <i class="fa-solid fa-house"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="">Flights</a>
+                        <a class="nav-link " href="#flight">Flights</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Hotel</a>
+                        <a class="nav-link " href="#hotel">Hotel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="">Packages</a>
+                        <a class="nav-link " href="#packages">Packages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="">Services</a>
+                        <a class="nav-link " href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="">Offers</a>
+                        <a class="nav-link " href="#offers">Offers</a>
                     </li>
 
                     <li class="nav-but ">
@@ -161,211 +161,363 @@
         <!-- </div> -->
 
         <!-- Flight Section -->
-
-        <form class=" flight border  rounded m-5 bg-light ">
-            <h5 class="subhead-flight mt-2 ms-2 text-center"> <i class="fa-solid fa-plane" style="color: orange;"></i>
-                &nbsp;Book a
-                flight
-            </h5>
-            <div class="form-check form-check-inline ms-2">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    One way
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                    Return
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                    Multi-city
-                </label>
-            </div>
-
-            <!-- <div class="from-to border  m-3 rounded"> -->
-            <div class="row ms-2 me-2" style="font-family:'Poppins', sans-serif;">
-                <div class="col-lg-3 col-md-6 col-xs-12 form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="From">
-                    <label for="floatingInput">&nbsp;<small class="text-muted">From</small></label>
+        <section id="flight">
+            <form class=" flight border  rounded m-5 bg-light ">
+                <h5 class="subhead-flight mt-2 ms-2 text-center"> <i class="fa-solid fa-plane"
+                        style="color: orange;"></i>
+                    &nbsp;Book a
+                    flight
+                </h5>
+                <div class="form-check form-check-inline ms-2">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        One way
+                    </label>
                 </div>
-                <!-- <div class="col-3"><i class="fa-solid fa-arrows-rotate" style="color: #00040a;"></i> To</div> -->
-                <div class="col-lg-3 col-md-6 col-xs-12 form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="To">
-                    <label for="floatingInput">&nbsp;<small class="text-muted">To</small></label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Return
+                    </label>
                 </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 form-floating mb-3">
-                    <input type="date" class="form-control" id="floatingInput" placeholder="departure">
-                    <label for="floatingInput">&nbsp;<small class="text-muted">&nbsp;Departure</small></label>
-                    <!-- <input type="date" id="departure" name="departure"> -->
-
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Multi-city
+                    </label>
                 </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 form-floating mb-3">
-                    <ul class="nav-item dropdown form-control">
-                        <a class="nav-link-pass dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            &nbsp;<small class="text-muted ">Class</small>
 
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Economy</a></li>
-                            <li><a class="dropdown-item" href="#">Premium Business</a></li>
-                            <li><a class="dropdown-item" href="#">First Class</a></li>
+                <!-- <div class="from-to border  m-3 rounded"> -->
+                <div class="row ms-2 me-2" style="font-family:'Poppins', sans-serif;">
+                    <div class="col-lg-3 col-md-6 col-xs-12 form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="From">
+                        <label for="floatingInput">&nbsp;<small class="text-muted">From</small></label>
+                    </div>
+                    <!-- <div class="col-3"><i class="fa-solid fa-arrows-rotate" style="color: #00040a;"></i> To</div> -->
+                    <div class="col-lg-3 col-md-6 col-xs-12 form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="To">
+                        <label for="floatingInput">&nbsp;<small class="text-muted">To</small></label>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 form-floating mb-3">
+                        <input type="date" class="form-control" id="floatingInput" placeholder="departure">
+                        <label for="floatingInput">&nbsp;<small class="text-muted">&nbsp;Departure</small></label>
+                        <!-- <input type="date" id="departure" name="departure"> -->
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 form-floating mb-3">
+                        <ul class="nav-item dropdown form-control">
+                            <a class="nav-link-pass dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                &nbsp;<small class="text-muted ">Class</small>
+
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Economy</a></li>
+                                <li><a class="dropdown-item" href="#">Premium Business</a></li>
+                                <li><a class="dropdown-item" href="#">First Class</a></li>
+                            </ul>
                         </ul>
-                    </ul>
+                    </div>
                 </div>
-            </div>
-            <!-- </div> -->
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end m-3">
-                <p class=" show-flights me-md-2"><small class="text-muted">+ Add promo code</small></p>
-                <button class="btn btn-warning me-md-2 text-white" type="button">Show flights</button>
+                <!-- </div> -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end m-3">
+                    <p class=" show-flights me-md-2"><small class="text-muted">+ Add promo code</small></p>
+                    <button class="btn btn-warning me-md-2 text-white" type="button">Show flights</button>
 
-            </div>
-        </form>
+                </div>
+            </form>
+        </section>
         <!-- Flight section completed -->
 
         <!-- Hotel Section -->
+        <section id="hotel">
+            <div class="main-hotel mb-5">
+                <div class="card   text-white" style="transform: none;box-shadow: none;">
+                    <img src="https://patinahotels.com/assets/img/site_images/maldives/maldives-accom-1br-watervilla.jpg"
+                        style="height: 100%;position: absolute;" alt="..." class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="text-center"><i class="fa-solid fa-hotel" style="color: #ffffff;"></i>&nbsp;Find a
+                            Hotel
+                        </h5>
+                        <div class="row mx-auto mt-5">
+                            <div class="col">
 
-        <div class="main-hotel">
-            <div class="card  text-white" style="transform: none;box-shadow: none;">
-                <img src="https://patinahotels.com/assets/img/site_images/maldives/maldives-accom-1br-watervilla.jpg"
-                    style="height: 300px;" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="text-center"><i class="fa-solid fa-hotel" style="color: #ffffff;"></i>&nbsp;Find a Hotel
-                    </h5>
-                    <div class="row mx-auto mt-5">
-                        <div class="col">
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-xs-12 bg-light text-dark border">
+                                <div class="form-floating mt-2">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="Hotel">
+                                    <label for="floatingInput"><small class="text-muted"><i
+                                                class="fa-solid fa-magnifying-glass"
+                                                style="color: #f2b407;"></i>Destination,Hotel</small></label>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-xs-12 bg-light text-dark border">
+                                <div class="form-floating mt-2">
+                                    <input type="date" class="form-control" id="floatingInput" placeholder="Check-In">
+                                    <label for="floatingInput"><small class="text-muted">Check-In</small></label>
+                                </div>
 
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-xs-12 bg-light text-dark border">
-                            <div class="form-floating mt-2">
-                                <input type="text" class="form-control" id="floatingInput" placeholder="Hotel">
-                                <label for="floatingInput"><small class="text-muted"><i
-                                            class="fa-solid fa-magnifying-glass"
-                                            style="color: #f2b407;"></i>Destination,Hotel</small></label>
                             </div>
-                        </div>
-                        <div class="col-lg-2 col-md-6 col-xs-12 bg-light text-dark border">
-                            <div class="form-floating mt-2">
-                                <input type="date" class="form-control" id="floatingInput" placeholder="Check-In">
-                                <label for="floatingInput"><small class="text-muted">Check-In</small></label>
+                            <div class="col-lg-2 col-md-6 col-xs-12 bg-light text-dark border">
+                                <div class="form-floating mt-2">
+                                    <input type="date" class="form-control" id="floatingInput" placeholder="Check-Out">
+                                    <label for="floatingInput"><small class="text-muted">Check-Out</small></label>
+                                </div>
                             </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-6 col-xs-12 bg-light text-dark border">
-                            <div class="form-floating mt-2">
-                                <input type="date" class="form-control" id="floatingInput" placeholder="Check-Out">
-                                <label for="floatingInput"><small class="text-muted">Check-Out</small></label>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-6 col-xs-12 bg-light text-dark border">
-                            <div class="form-floating mt-2">
-                                <!-- <input type="text" class="form-control" id="floatingInput" placeholder="Check-Out"> -->
-                                <!-- <label for="floatingInput"><small class="text-muted">1ROOM,1ADULT</small></label> -->
-                                <ul class="nav-item dropdown form-control">
-                                    <a class="nav-link-pass dropdown-toggle " href="#" id="navbarDropdownMenuLink"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <small class="text-muted">1ROOM,1ADULT</small>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="#">1ROOM,1ADULT</a></li>
-                                        <li><a class="dropdown-item" href="#">1ROOM,1ADULT</a></li>
-                                        <li><a class="dropdown-item" href="#">1ROOM,1ADULT</a></li>
+                            <div class="col-lg-2 col-md-6 col-xs-12 bg-light text-dark border">
+                                <div class="form-floating mt-2">
+                                    <!-- <input type="text" class="form-control" id="floatingInput" placeholder="Check-Out"> -->
+                                    <!-- <label for="floatingInput"><small class="text-muted">1ROOM,1ADULT</small></label> -->
+                                    <ul class="nav-item dropdown form-control">
+                                        <a class="nav-link-pass dropdown-toggle " href="#" id="navbarDropdownMenuLink"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <small class="text-muted">1ROOM,1ADULT</small>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">1ROOM,1ADULT</a></li>
+                                            <li><a class="dropdown-item" href="#">1ROOM,1ADULT</a></li>
+                                            <li><a class="dropdown-item" href="#">1ROOM,1ADULT</a></li>
+                                        </ul>
                                     </ul>
-                                </ul>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-warning text-white mt-3"
+                                    style="font-weight: bold;">Search</button>
+                            </div>
+                            <div class="col">
 
                             </div>
                         </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-warning text-white mt-3"
-                                style="font-weight: bold;">Search</button>
-                        </div>
-                        <div class="col">
 
-                        </div>
                     </div>
-
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Hotel section -->
 
         <!-- Around the globe section -->
-        <div class="container-fluid mt-5">
-            <h4>Browse by property type around the globe</h4>
-            <div class="row gx-3 gx-lg-5 globe">
-                <div class="col-md-3 mt-5 ">
-                    <!-- <div class="card h-100"> -->
-                    <div class="card-body">
-
-                        <img src="https://static.leonardo-hotels.com/image/executive-room-with-king-bed_35ba711c8e3052877659372a86e4bb3a_2048x1365_desktop_2.jpeg"
-                            style="width: 100%;height: 190px;" class="card-img-top" alt="...">
+        <section id="hotel">
+            <div class="container-fluid mt-5">
+                <h4 class="pop-dest text-center">Browse by property type around the globe</h4>
+                <div class="row gx-3 gx-lg-5 globe">
+                    <div class="col-md-3 mt-5 ">
+                        <!-- <div class="card h-100"> -->
                         <div class="card-body">
-                            <h5 class="text-center">Hotels</h5>
-                            <p class="card-text text-center"><small class="text-muted">1,990,700 hotels</small></p>
+
+                            <img src="https://static.leonardo-hotels.com/image/executive-room-with-king-bed_35ba711c8e3052877659372a86e4bb3a_2048x1365_desktop_2.jpeg"
+                                style="width: 100%;height: 190px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">Hotels</h5>
+                                <p class="card-text text-center"><small class="text-muted">1,990,700 hotels</small></p>
+                            </div>
+
                         </div>
-
+                        <!-- </div> -->
                     </div>
-                    <!-- </div> -->
-                </div>
-                <div class="col-md-3 mt-5 ">
-                    <!-- <div class="card h-100"> -->
-                    <div class="card-body">
-
-                        <img src="https://www.thearmitage.com/assets/images/home/2000/home_banner_v7.jpg"
-                            style="width: 100%;height: 190px;" class="card-img-top" alt="...">
+                    <div class="col-md-3 mt-5 ">
+                        <!-- <div class="card h-100"> -->
                         <div class="card-body">
-                            <h5 class="text-center">Apartments</h5>
-                            <p class="card-text text-center"><small class="text-muted">1,250,900 apartments</small></p>
+
+                            <img src="https://www.thearmitage.com/assets/images/home/2000/home_banner_v7.jpg"
+                                style="width: 100%;height: 190px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">Apartments</h5>
+                                <p class="card-text text-center"><small class="text-muted">1,250,900 apartments</small>
+                                </p>
+                            </div>
+
                         </div>
-
+                        <!-- </div> -->
                     </div>
-                    <!-- </div> -->
-                </div>
-                <div class="col-md-3 mt-5 ">
-                    <!-- <div class="card h-100"> -->
-                    <div class="card-body">
-
-                        <img src="https://press.accor.com/middle-east-africa-turkey-asia-pacific/wp-content/uploads/2022/09/Accor-Maldives-4-2000x1341.jpg"
-                            style="width: 100%;height: 190px;" class="card-img-top" alt="...">
+                    <div class="col-md-3 mt-5 ">
+                        <!-- <div class="card h-100"> -->
                         <div class="card-body">
-                            <h5 class="text-center">Resorts</h5>
-                            <p class="card-text text-center"><small class="text-muted">910,100 resorts</small></p>
+
+                            <img src="https://press.accor.com/middle-east-africa-turkey-asia-pacific/wp-content/uploads/2022/09/Accor-Maldives-4-2000x1341.jpg"
+                                style="width: 100%;height: 190px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">Resorts</h5>
+                                <p class="card-text text-center"><small class="text-muted">910,100 resorts</small></p>
+                            </div>
+
                         </div>
-
+                        <!-- </div> -->
                     </div>
-                    <!-- </div> -->
-                </div>
-                <div class="col-md-3 mt-5 ">
-                    <!-- <div class="card h-100"> -->
-                    <div class="card-body">
-
-                        <img src="https://hips.hearstapps.com/hmg-prod/images/cozy-winter-cabins-1603479244.jpg"
-                            style="width: 100%;height: 190px;" class="card-img-top" alt="...">
+                    <div class="col-md-3 mt-5 ">
+                        <!-- <div class="card h-100"> -->
                         <div class="card-body">
-                            <h5 class="text-center">Cabins</h5>
-                            <p class="card-text text-center"><small class="text-muted">47,619 cabins</small></p>
-                        </div>
 
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/cozy-winter-cabins-1603479244.jpg"
+                                style="width: 100%;height: 190px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">Cabins</h5>
+                                <p class="card-text text-center"><small class="text-muted">47,619 cabins</small></p>
+                            </div>
+
+                        </div>
+                        <!-- </div> -->
                     </div>
-                    <!-- </div> -->
                 </div>
             </div>
-        </div>
+        </section>
         <!-- globe section ended -->
+
+        <!-- Package Section -->
+        <section id="packages">
+            <div class="container-fluid mt-5">
+                <h4 class="mt-5 text-center pop-dest">Packages</h4>
+                <div class="row g-0 gy-5">
+                    <div class="col-lg-4 col-sm-6  ">
+                        <div class="row g-0 gy-5">
+                            <div class="parent mt-5 plc-bg image11">
+                                <h2 class="phead m-2">New Zealand</h2>
+                                <p><small class=" text-light m-2">Stunning natural beauty</small></p>
+                                <hr>
+                                <p class="m-2 pac-para">Discover the breathtaking landscapes
+                                    of
+                                    New Zealand, from
+                                    the
+                                    rolling
+                                    hills of Hobbiton to the fjords of Milford Sound. Experience
+                                    adrenaline-pumping
+                                    activities, Maori culture, and stunning natural beauty. </p>
+                                <!-- <hr class="" style="width: 50%; color: black;"> -->
+                                <button class="m-2 pac-btn">Explore&raquo;</button>
+
+                                <div class="cover plc-bg image11">
+                                    <h2 class="text-center mt-5 pack-head">Scenic New Zealand Odyssey</h2>
+                                    <h6 class="text-center mt-5">Stunning natural beauty</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0 gy-5">
+                            <div class="parent mt-5 plc-bg image22">
+                                <h2 class="phead m-2">Europe</h2>
+                                <p><small class=" text-light m-2">Italy, France, Switzerland</small></p>
+                                <hr>
+                                <p class="m-2 pac-para">Explore the best of Europe with
+                                    this
+                                    comprehensive
+                                    package. From
+                                    the romantic canals of Venice to the iconic Eiffel Tower in Paris,
+                                    experience
+                                    the
+                                    rich history, art. Includes visits to Italy, France, Switzerland,
+                                    and
+                                    more. </p>
+                                <!-- <hr class="" style="width: 50%; color: black;"> -->
+                                <button class="m-2 pac-btn">Explore&raquo;</button>
+
+                                <div class="cover plc-bg image22">
+                                    <h2 class="text-center mt-5 pack-head">Enchanting Europe Escapade</h2>
+                                    <h6 class="text-center mt-5">Iconic Eiffel Tower</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 ">
+                        <div class="row g-0 gy-5">
+                            <div class="parent mt-5 plc-bg image33">
+                                <h2 class="phead m-2">Africa</h2>
+                                <p><small class=" text-light m-2">Kenya,
+                                        Tanzania.</small></p>
+                                <hr>
+                                <p class="m-2 pac-para">Embark on a thrilling safari
+                                    adventure across Kenya and
+                                    Tanzania.
+                                    Witness the majestic wildlife of the Serengeti, the Ngorongoro
+                                    Crater,
+                                    and
+                                    the
+                                    Maasai
+                                    Mara, creating memories that will last a lifetime. </p>
+                                <!-- <hr class="" style="width: 50%; color: black;"> -->
+                                <button class="m-2 pac-btn">Explore&raquo;</button>
+
+
+                                <div class="cover plc-bg image33">
+                                    <h2 class="text-center mt-5 pack-head">African Safari Extravaganza</h2>
+                                    <h6 class="text-center mt-5">Majestic wildlife</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-0 gy-5">
+                            <div class="parent mt-5 plc-bg image44">
+                                <h2 class="phead m-2">India</h2>
+                                <p><small class=" text-light m-2">Delhi,
+                                        Agra,
+                                        Jaipur</small></p>
+                                <hr>
+                                <p class="pac-para m-2">Discover the breathtaking landscapes
+                                    of
+                                    New Zealand, from
+                                    the
+                                    rolling
+                                    hills of Hobbiton to the fjords of Milford Sound. Experience
+                                    adrenaline-pumping
+                                    activities, Maori culture, and stunning natural beauty. </p>
+                                <hr class="" style="width: 50%; color: black;">
+                                <button class="m-2 pac-btn">Explore&raquo;</button>
+
+
+                                <div class="cover plc-bg image44">
+                                    <h2 class="text-center mt-5 pack-head">Indian Golden Triangle Tour</h2>
+                                    <h6 class="text-center mt-5">Classic tour</h6>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 g-0">
+                        <div class="parent mt-5 plc-bg image55">
+                            <h2 class="phead m-2">Exotic Islands Getaway</h2>
+                            <p><small class=" text-light m-2">Maldives,Seychelles</small></p>
+                            <hr>
+                            <p class="m-2 pac-para">Indulge in the luxury of
+                                paradise
+                                with
+                                this island-hopping
+                                package.
+                                Relax on the pristine beaches, enjoy water sports, and experience
+                                the
+                                overwater
+                                bungalows in the Maldives and the lush beauty of Seychelles. </p>
+                            <hr class="" style="width: 50%; color: black;">
+                            <button class="m-2 pac-btn">Explore&raquo;</button>
+
+
+                            <div class="cover plc-bg image55">
+
+
+                                <h2 class="text-center mt-5 pack-head">Exotic Islands Getaway</h2>
+                                <h6 class="text-center mt-5">Pristine beaches</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Package section ended -->
+
 
         <!-- popular destination -->
         <div class="container-fluid">
-            <h4 class="mt-5 text-center">Strike It Rich Offers on Popular Destinations</h4>
+            <h4 class="mt-5 text-center pop-dest">Strike It Rich Offers on Popular Destinations</h4>
             <p class="card-text text-center"><small class="text-muted">Save extra with our exclusive deals!</small></p>
             <div class="row gx-2 gx-lg-5">
                 <div class="col-md-2 mb-5">
-                    <div class="home-content1 image1 rounded">
+                    <div class="home-content1 image1 rounded destination-bg">
                         <div class="content-home1">
                             <h3 class="heading4 ">Paris</h3>
                             <!-- <button class="" style="background: transparent;border: none;">dd</button> -->
@@ -375,7 +527,7 @@
                 </div>
                 <!-- <div class="col-lg-2 col-md-4 col-xs-12"> -->
                 <div class="col-md-2 mb-5">
-                    <div class="home-content1 image2 rounded">
+                    <div class="home-content1 image2 rounded destination-bg">
                         <div class="content-home1">
                             <h3 class="heading4">Thailand</h3>
                             <a class="offer" href="">15% off*</a>
@@ -383,7 +535,7 @@
                     </div>
                 </div>
                 <div class="col-md-2 mb-5">
-                    <div class="home-content1 image3 rounded">
+                    <div class="home-content1 image3 rounded destination-bg">
                         <div class="content-home1">
                             <h3 class="heading4">Kashmir</h3>
                             <a class="offer" href="">11% off*</a>
@@ -391,7 +543,7 @@
                     </div>
                 </div>
                 <div class="col-md-2 mb-5">
-                    <div class="home-content1 image4 rounded">
+                    <div class="home-content1 image4 rounded destination-bg">
                         <div class="content-home1">
                             <h3 class="heading4">London</h3>
                             <a class="offer" href="">15% off*</a>
@@ -399,7 +551,7 @@
                     </div>
                 </div>
                 <div class="col-md-2 mb-5">
-                    <div class="home-content1 image5 rounded">
+                    <div class="home-content1 image5 rounded destination-bg">
                         <div class="content-home1">
                             <h3 class="heading4">Amsterdam</h3>
                             <a class="offer" href="">10% off*</a>
@@ -407,7 +559,7 @@
                     </div>
                 </div>
                 <div class="col-md-2 mb-5">
-                    <div class="home-content1 image6 rounded">
+                    <div class="home-content1 image6 rounded destination-bg">
                         <div class="content-home1">
                             <h3 class="heading4">Rome</h3>
                             <a class="offer" href="">10% off*</a>
@@ -418,128 +570,130 @@
         </div>
 
         <!-- Service section -->
-        <div class="container-fluid">
-            <h4 class="mt-5 text-center">What Sets Us Apart</h4>
-            <div id="carouselExampleControls2" class="carousel slide carousel-dark" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="cards-wrapper">
-                            <div class="row mt-5 text-center">
-                                <div class="col-md-3">
-                                    <span class="fa-stack fa-3x">
-                                        <i class="fas fa-circle fa-stack-2x text-dark "></i>
-                                        <i class="fa-solid fa-book fa-stack-1x fa-inverse "></i>
-                                    </span>
-                                    <h4 class="my-3 text-center">Travel Consultation</h4>
-                                    <p class="text-muted text-center">Expert advice and guidance to help you plan
-                                        your
-                                        trip.
-                                        <br><a href="">Read More&raquo;</a>
-                                    </p>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="fa-stack fa-3x">
-                                        <i class="fas fa-circle fa-stack-2x text-dark"></i>
-                                        <i class="fa-solid fa-hotel fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                    <h4 class="my-3 text-center">Accommodation </h4>
-                                    <p class="text-muted text-center">Expert advice and guidance to help you plan
-                                        your
-                                        trip.
-                                        <br><a href="">Read More&raquo;</a>
-                                    </p>
-                                    <!-- <p class=" mb-0"><small class="text-muted">Fill out a 2 minute questionaire about how you
+        <section id="services">
+            <div class="container-fluid">
+                <h4 class="mt-3 text-center pop-dest">What Sets Us Apart</h4>
+                <div id="carouselExampleControls2" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper">
+                                <div class="row mt-5 text-center">
+                                    <div class="col-md-3">
+                                        <span class="fa-stack fa-3x">
+                                            <i class="fas fa-circle fa-stack-2x text-dark "></i>
+                                            <i class="fa-solid fa-book fa-stack-1x fa-inverse "></i>
+                                        </span>
+                                        <h4 class="my-3 text-center">Travel Consultation</h4>
+                                        <p class="text-muted text-center">Expert advice and guidance to help you plan
+                                            your
+                                            trip.
+                                            <br><a href="">Read More&raquo;</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span class="fa-stack fa-3x">
+                                            <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                            <i class="fa-solid fa-hotel fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <h4 class="my-3 text-center">Accommodation </h4>
+                                        <p class="text-muted text-center">Expert advice and guidance to help you plan
+                                            your
+                                            trip.
+                                            <br><a href="">Read More&raquo;</a>
+                                        </p>
+                                        <!-- <p class=" mb-0"><small class="text-muted">Fill out a 2 minute questionaire about how you
                                             like to travel</small></p> -->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span class="fa-stack fa-3x">
+                                            <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                            <i class="fa-solid fa-paste fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <h4 class="my-3 text-center">Visa Assistance</h4>
+                                        <p class="text-muted text-center">Helping with visas and necessary travel
+                                            documents.<br><a href="">Read More&raquo;</a> </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span class="fa-stack fa-3x">
+                                            <i class="fas fa-circle fa-stack-2x text-dark "></i>
+                                            <i class="fa-solid fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <h4 class="my-3 text-center">Transportation</h4>
+                                        <p class="text-muted text-center">Arranging airport transfers, car rentals, and
+                                            more.<br><a href="">Read More&raquo;</a> </p>
+                                    </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <span class="fa-stack fa-3x">
-                                        <i class="fas fa-circle fa-stack-2x text-dark"></i>
-                                        <i class="fa-solid fa-paste fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                    <h4 class="my-3 text-center">Visa Assistance</h4>
-                                    <p class="text-muted text-center">Helping with visas and necessary travel
-                                        documents.<br><a href="">Read More&raquo;</a> </p>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="fa-stack fa-3x">
-                                        <i class="fas fa-circle fa-stack-2x text-dark "></i>
-                                        <i class="fa-solid fa-car fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                    <h4 class="my-3 text-center">Transportation</h4>
-                                    <p class="text-muted text-center">Arranging airport transfers, car rentals, and
-                                        more.<br><a href="">Read More&raquo;</a> </p>
-                                </div>
-                            </div>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="cards-wrapper">
-                            <div class="row mt-5 text-center">
-                                <div class="col-md-3">
-                                    <span class="fa-stack fa-3x">
-                                        <i class="fas fa-circle fa-stack-2x text-dark "></i>
-                                        <i class="fa-solid fa-mountain-sun fa-stack-1x fa-inverse "></i>
-                                    </span>
-                                    <h4 class="my-3 text-center">Guided Tours</h4>
-                                    <p class="text-muted text-center">Booking flights that suit your preferences
-                                        and
-                                        budget.<br><a href="">Read More&raquo;</a>
-                                    </p>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="fa-stack fa-3x">
-                                        <i class="fas fa-circle fa-stack-2x text-dark"></i>
-                                        <i class="fa-solid fa-hotel fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                    <h4 class="my-3 text-center">24/7 Support</h4>
-                                    <p class="text-muted text-center">Expert advice and guidance to help you plan
-                                        your
-                                        trip.
-                                        <br><a href="">Read More&raquo;</a>
-                                    </p>
-                                    <!-- <p class=" mb-0"><small class="text-muted">Fill out a 2 minute questionaire about how you
+                        <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="row mt-5 text-center">
+                                    <div class="col-md-3">
+                                        <span class="fa-stack fa-3x">
+                                            <i class="fas fa-circle fa-stack-2x text-dark "></i>
+                                            <i class="fa-solid fa-mountain-sun fa-stack-1x fa-inverse "></i>
+                                        </span>
+                                        <h4 class="my-3 text-center">Guided Tours</h4>
+                                        <p class="text-muted text-center">Booking flights that suit your preferences
+                                            and
+                                            budget.<br><a href="">Read More&raquo;</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span class="fa-stack fa-3x">
+                                            <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                            <i class="fa-solid fa-hotel fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <h4 class="my-3 text-center">24/7 Support</h4>
+                                        <p class="text-muted text-center">Expert advice and guidance to help you plan
+                                            your
+                                            trip.
+                                            <br><a href="">Read More&raquo;</a>
+                                        </p>
+                                        <!-- <p class=" mb-0"><small class="text-muted">Fill out a 2 minute questionaire about how you
                                             like to travel</small></p> -->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span class="fa-stack fa-3x">
+                                            <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                            <i class="fa-solid fa-paste fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <h4 class="my-3 text-center">Travel Insurance</h4>
+                                        <p class="text-muted text-center">Recommending and facilitating travel
+                                            insurance
+                                            coverage.<br><a href="">Read More&raquo;</a></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span class="fa-stack fa-3x">
+                                            <i class="fas fa-circle fa-stack-2x text-dark "></i>
+                                            <i class="fa-solid fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <h4 class="my-3 text-center">Specialized Travel</h4>
+                                        <p class="text-muted text-center">Creating unique experiences for niche
+                                            interests.<br><a href="">Read More&raquo;</a> </p>
+                                    </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <span class="fa-stack fa-3x">
-                                        <i class="fas fa-circle fa-stack-2x text-dark"></i>
-                                        <i class="fa-solid fa-paste fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                    <h4 class="my-3 text-center">Travel Insurance</h4>
-                                    <p class="text-muted text-center">Recommending and facilitating travel
-                                        insurance
-                                        coverage.<br><a href="">Read More&raquo;</a></p>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="fa-stack fa-3x">
-                                        <i class="fas fa-circle fa-stack-2x text-dark "></i>
-                                        <i class="fa-solid fa-car fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                    <h4 class="my-3 text-center">Specialized Travel</h4>
-                                    <p class="text-muted text-center">Creating unique experiences for niche
-                                        interests.<br><a href="">Read More&raquo;</a> </p>
-                                </div>
+
                             </div>
-
                         </div>
+
+
                     </div>
-
-
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
 
-        </div>
+            </div>
+        </section>
         <!-- Service section ended-->
 
 
@@ -602,97 +756,102 @@
         </div>
 
         <!-- Offer section -->
+        <section id="offers">
+            <h4 class="text-center mt-5 mb-5 pop-dest">Special Offers</h4>
+            <div class="container-fluid">
+                <div class="row gy-3 ms-3 ">
+                    <div class="col-6">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmxpZ2h0fGVufDB8fDB8fHww&w=1000&q=80"
+                                        class="img-fluid rounded-start" alt="..." style="height: 100%;width: 180px;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fantastic Deals For International Trips:</h5>
+                                        <p class="card-text d-none d-lg-block"><small class="text-muted">Grab upto
+                                                Rs.10,000
+                                                OFF
+                                                on
+                                                International Flights</small></p>
+                                        <div class="offer-footer d-flex justify-content-between">
+                                            <p class="card-text "><small class="text-muted">T&C's Apply*</small></p>
+                                            <a class="book-now" style="font-size: 12px;" href="">BOOK NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTI1xFzgIiarcJzvTnkdQQXJsT9Y2RYmkwQg&usqp=CAU" -->
+                                    <!-- class="img-fluid rounded-start" alt="..." style="height: 100%;"> -->
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnK_IbSnKN1wyqI_gwqEV1BXrSJPpQM73NTw&usqp=CAU"
+                                        class="img-fluid rounded-start" alt="..." style="height: 100%;width: 180px;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">AVAIL Interest FREE* EMI + Up to 35% OFF*</h5>
+                                        <p class="card-text d-none d-lg-block"><small class="text-muted">Flights,hotels
+                                                &
+                                                holiday packages.
 
-        <h4 class="text-center mt-5 mb-5">Special Offers</h4>
-        <div class="container-fluid">
-            <div class="row gy-3 ms-3">
-                <div class="col-6">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmxpZ2h0fGVufDB8fDB8fHww&w=1000&q=80"
-                                    class="img-fluid rounded-start" alt="..." style="height: 100%;width: 180px;">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Fantastic Deals For International Trips:</h5>
-                                    <p class="card-text d-none d-lg-block"><small class="text-muted">Grab upto Rs.10,000
-                                            OFF
-                                            on
-                                            International Flights</small></p>
-                                    <div class="offer-footer d-flex justify-content-between">
-                                        <p class="card-text "><small class="text-muted">T&C's Apply*</small></p>
-                                        <a class="book-now" style="font-size: 12px;" href="">BOOK NOW</a>
+                                            </small></p>
+                                        <div class="offer-footer d-flex justify-content-between">
+                                            <p class="card-text"><small class="text-muted">T&C's Apply*</small></p>
+                                            <a class="book-now" style="font-size: 12px;" href="">BOOK NOW</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTI1xFzgIiarcJzvTnkdQQXJsT9Y2RYmkwQg&usqp=CAU" -->
-                                <!-- class="img-fluid rounded-start" alt="..." style="height: 100%;"> -->
-                                <img src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmxpZ2h0fGVufDB8fDB8fHww&w=1000&q=80"
-                                    class="img-fluid rounded-start" alt="..." style="height: 100%;width: 180px;">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">AVAIL Interest FREE* EMI + Up to 35% OFF*</h5>
-                                    <p class="card-text d-none d-lg-block"><small class="text-muted">Flights,hotels &
-                                            holiday packages.
-
-                                        </small></p>
-                                    <div class="offer-footer d-flex justify-content-between">
-                                        <p class="card-text"><small class="text-muted">T&C's Apply*</small></p>
-                                        <a class="book-now" style="font-size: 12px;" href="">BOOK NOW</a>
+                    <div class="col-6">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/LongWeekend.jpg" class="img-fluid rounded-start" alt="..."
+                                        style="height: 100%;width: 180px;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Weekend Holidays Mania:</h5>
+                                        <p class="card-text d-none d-lg-block"><small class="text-muted">Grab 30% OFF*
+                                                on
+                                                holiday packages</small>
+                                        </p>
+                                        <div class="offer-footer d-flex justify-content-between">
+                                            <p class="card-text"><small class="text-muted">T&C's Apply*</small></p>
+                                            <a class="book-now" style="font-size: 12px;" href="">BOOK NOW</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://promos.makemytrip.com/notification/xhdpi//116X116-IF-CFAR-26092022.jpg?im=Resize=(150,150)"
-                                    class="img-fluid rounded-start" alt="..." style="height: 100%;width: 180px;">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Weekend Holidays Mania:</h5>
-                                    <p class="card-text d-none d-lg-block"><small class="text-muted">Grab 30% OFF* on
-                                            holiday packages</small>
-                                    </p>
-                                    <div class="offer-footer d-flex justify-content-between">
-                                        <p class="card-text"><small class="text-muted">T&C's Apply*</small></p>
-                                        <a class="book-now" style="font-size: 12px;" href="">BOOK NOW</a>
-                                    </div>
+                    <div class="col-6">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://promos.makemytrip.com/notification/xhdpi//116X116-IF-CFAR-26092022.jpg?im=Resize=(150,150)"
+                                        class="img-fluid rounded-start" alt="..." style="height: 100%;width: 180px;">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://promos.makemytrip.com/notification/xhdpi//116X116-IF-CFAR-26092022.jpg?im=Resize=(150,150)"
-                                    class="img-fluid rounded-start" alt="..." style="height: 100%;width: 180px;">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Introduced:'Zero Cancellation'!</h5>
-                                    <p class="card-text d-none d-lg-block"><small class="text-muted">A WOW benefit to
-                                            help
-                                            you get 100% refund
-                                            on International flight cancellation</small></p>
-                                    <div class="offer-footer d-flex justify-content-between">
-                                        <p class="card-text"><small class="text-muted">T&C's Apply*</small></p>
-                                        <a class="book-now" style="font-size: 12px;" href="">BOOK NOW</a>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Introduced:Zero Cancellation</h5>
+                                        <p class="card-text d-none d-lg-block"><small class="text-muted">A WOW benefit
+                                                to
+                                                help
+                                                you get 100% refund
+                                                on International flight cancellation</small></p>
+                                        <div class="offer-footer d-flex justify-content-between">
+                                            <p class="card-text"><small class="text-muted">T&C's Apply*</small></p>
+                                            <a class="book-now" style="font-size: 12px;" href="">BOOK NOW</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -700,7 +859,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Offer section ended -->
 

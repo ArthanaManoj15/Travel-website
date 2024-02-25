@@ -15,17 +15,25 @@
 .nav-but .btn:hover{
     color: orange;
 }
-body{
-    height: 200vh;
+html{
+    height: 100%;
 }
+body{
+    min-height: 100px;
+} 
+/* html{
+    overflow: hidden;
+} */
 .navbar{
     font-family: 'Poppins', sans-serif;
 }
 .navbar-brand{
     font-family: 'ADLaM Display', cursive;
     font-size: 22px;
-    
 }
+/* #content {
+    min-height: calc(100vh - 40px);
+  } */
 /* footer */
 .icon{
     width: 50px;
@@ -43,7 +51,7 @@ body{
     color: black;
   }
   #site-footer{
-    margin-top: 3%;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;

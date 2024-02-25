@@ -100,13 +100,19 @@ body {
 /* Globe Section */
 
 .globe img:hover {
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    transform: scale(1.5);
+    transition: transform .2s;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
 }
 
 /* Popular destination */
 .home-content1 {
     width: 100%;
     height: 180px;
+    /* height: auto; */
     background-position: right;
     background-size: contain;
     display: flex;
@@ -125,15 +131,12 @@ body {
 
 .image1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1568321612313-209650d5d99a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80);
-    
-    min-width: 100%;
-    background-repeat: no-repeat;
+
+
 
 }
 
-/* .image2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i0.wp.com/www.hachettebookgroup.com/wp-content/uploads/2019/01/Thailand_TonSaiBay_chriss73_123rf.jpg?resize=1080%2C1080&ssl=1);
-} */
+
 .image2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://worldtravelpackages.com/wp-content/uploads/2023/04/Thailand-On-Budget.png);
 }
@@ -162,17 +165,137 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-.heading4{
+
+.heading4 {
     font-size: 22px;
 }
 
+.destination-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pop-dest{
+    font-size: 50px;
+    background: radial-gradient(circle, #80ffc1 0%, green 100%);
+    /* background: linear-gradient(30deg, #9ED8DB 40%, #007B82 70%); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: animatedGradient 2s infinite ease;
+    animation-direction: alternate;
+
+    @keyframes animatedGradient {
+        from {
+            background-size: 100%;
+        }
+
+        to {
+            background-size: 250%;
+        }
+    }
+}
+
+/* Popular destination ended */
+
+/* Package Section */
+.parent,
+.cover {
+    height: 300px;
+    width: 100%;
+    /* background-color: #FF6F61; */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://w0.peakpx.com/wallpaper/147/971/HD-wallpaper-new-zealand-landscape-grass-mountains-new-zealand-nature-landscape.jpg); */
+}
+
+.image11 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://w0.peakpx.com/wallpaper/147/971/HD-wallpaper-new-zealand-landscape-grass-mountains-new-zealand-nature-landscape.jpg);
+}
+
+.image22 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://assets-global.website-files.com/5dc034b34ca21b09a5216c51/63b6d0c523062668d772d8d8_X5QWtj31QFomM9nCXaGqShGVDVsrX-BRPenAHy0lyhY.jpeg);
+}
+
+.image33 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://peakvisor.com/photo/SD/Serengeti-National-Park.jpg);
+}
+
+.image44 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg);
+    /* height: 100%; */
+}
+
+.image55 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://lp-cms-production.imgix.net/features/2018/02/beach_seychelles_lonelyplanet-32af2dc7fd07.jpg);
+    height: 92.5%;
+    /* margin: 0; */
+}
+
+.parent {
+    position: relative;
+    color: white;
+}
+
+.cover {
+    opacity: 100;
+    position: absolute;
+    top: 0;
+    color: white;
+}
+
+.cover:hover {
+    opacity: 0;
+    /* opacity: 0.5; */
+    /* clip-path: polygon(0 0, 0% 100%, 100% 100%); */
+
+}
+
+.plc-bg {
+    background-position: center;
+    background-size: cover;
+}
+
+.pack-head {
+    font-size: 30px;
+    font-weight: 900;
+    /* text-align: center;
+            display: flex;
+            justify-content: center; */
+}
+
+.phead {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pac-btn {
+    background-color: orange;
+    color: white;
+    border: 0;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.pac-para {
+    font-size: 13px;
+}
+
+/* Package section ended */
+
 /* Service section */
-#carouselExampleControls2 a{
+#carouselExampleControls2 a {
     text-decoration: none;
     color: orange;
     font-weight: bold;
 }
+
 /* Service section ended*/
+
+/* Offer section */
+.book-now {
+    text-decoration: none;
+    font-weight: bold;
+}
 
 /* forex section */
 .forex-title {
@@ -189,15 +312,17 @@ body {
 marquee {
     font-weight: bold;
 }
+
 /* forex section ended */
 
 /* Testimonials */
-.testimonials img{
+.testimonials img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     box-shadow: 5px 1px grey;
 }
+
 /* testimonials ended */
 
 /* Footer section */
@@ -216,7 +341,7 @@ marquee {
 
 .icon i {
     font-size: 30px;
-    color:black;
+    color: black;
 }
 
 #site-footer {
@@ -229,11 +354,13 @@ marquee {
 #copywrite {
     text-align: center;
 }
-.footer-title{
+
+.footer-title {
     font-size: 15px;
     font-weight: bold;
     color: black;
 }
+
 .privacy-contact {
     justify-content: center;
     /* display: flex; */
@@ -244,6 +371,7 @@ marquee {
     font-weight: bold;
 
 }
+
 /* .color-footer{
     
     background-color: black;
@@ -276,4 +404,20 @@ marquee {
     40% {
         transform: rotate(-15deg);
     }
+}
+
+/* Hotel section */
+/* .search-section-bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://patinahotels.com/assets/img/site_images/maldives/maldives-accom-1br-watervilla.jpg);
+}
+.card-img-overlay {
+    position: relative;
+
+} */
+
+/* .card-img{
+    position: absolute;
+} */
+.card-img-overlay {
+    position: relative;
 }

@@ -1,0 +1,55 @@
+/* Nav Section */
+.nav-link:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.nav-but .btn:hover {
+    color: orange;
+}
+
+.nav-link i:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+body {
+    height: 200vh;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'ADLaM Display', cursive;
+    font-size: 22px;
+}
+
+/* Nav section ended */
+
+/* Login section */
+
+.submit{
+    font-weight: bold;
+}
+.login-link a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+
+}
+.login-link a:hover{
+    text-decoration: underline;
+    
+}
+/* Login section ended */
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.istockphoto.com/id/155439315/photo/passenger-airplane-flying-above-clouds-during-sunset.jpg?s=612x612&w=0&k=20&c=LJWadbs3B-jSGJBVy9s0f8gZMHi2NvWFXa3VJ2lFcL0=);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
